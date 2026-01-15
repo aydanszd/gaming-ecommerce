@@ -16,34 +16,34 @@ export default function Navbar() {
                         className="flex items-center gap-3 group"
                     >
                         <Gamepad2 className="w-10 h-10 text-[#0088ff]  drop-shadow-[0_0_15px_rgba(0,136,255,0.6)]" />
-                        <span className="text-2xl font-[family-name:var(--font-orbitron)] bg-linear-to-r from-[#0088ff] to-[#ff8888] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,136,255,0.4)]">
+                        <span className="text-2xl font-(family-name:--font-orbitron) bg-linear-to-r from-[#0088ff] to-[#ff8888] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,136,255,0.4)]">
                             GameStore
                         </span>
                     </Link>
                     <div className="hidden md:flex items-center gap-8">
                         <Link
                             href="/games"
-                            className="text-gray-200 hover:text-[#0088ff] transition-colors font-[family-name:var(--font-orbitron)] relative group font-medium"
+                            className="text-gray-200 hover:text-[#0088ff] transition-colors font-(family-name:--font-orbitron) relative group font-medium"
                         >
                             Oyunlar
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#0088ff] to-[#ff8888] group-hover:w-full transition-all duration-300"></span>
                         </Link>
                         <Link
                             href="/console"
-                            className="text-gray-200 font-[family-name:var(--font-orbitron)] hover:text-[#0088ff] transition-colors relative group font-medium"
+                            className="text-gray-200 font-(family-name:--font-orbitron) hover:text-[#0088ff] transition-colors relative group font-medium"
                         >
                             Konsollar
-                            <span className="absolute font-[family-name:var(--font-orbitron)] bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#0088ff] to-[#ff8888] group-hover:w-full transition-all duration-300"></span>
+                            <span className="absolute font-(family-name:--font-orbitron) bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#0088ff] to-[#ff8888] group-hover:w-full transition-all duration-300"></span>
                         </Link>
                         <Link
                             href="/accessories"
-                            className="text-gray-200 font-[family-name:var(--font-orbitron)] hover:text-[#0088ff] transition-colors relative group font-medium"
+                            className="text-gray-200 font-(family-name:--font-orbitron) hover:text-[#0088ff] transition-colors relative group font-medium"
                         >
                             Aksesuarlar
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#0088ff] to-[#ff8888] group-hover:w-full transition-all duration-300"></span>
                         </Link>
                     </div>
-                    <div className="hidden lg:flex items-center flex-1 max-w-md mx-8 font-[family-name:var(--font-orbitron)]">
+                    <div className="hidden lg:flex items-center flex-1 max-w-md mx-8 font-(family-name:--font-orbitron)">
                         <div className="relative w-full">
                             <input
                                 type="text"
