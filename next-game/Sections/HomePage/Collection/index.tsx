@@ -74,7 +74,7 @@ export default function GameCollection() {
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
                                 {/* Overlay Effect */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] via-transparent to-transparent opacity-50 group-hover:opacity-30 transition-opacity" />
+                                <div className="absolute inset-0 bg-linear-to-t from-[#0a0a14] via-transparent to-transparent opacity-50 group-hover:opacity-30 transition-opacity" />
                             </div>
 
                             {/* Category Info */}
@@ -92,7 +92,7 @@ export default function GameCollection() {
             </div>
 
             {/* Bottom Gradient */}
-            <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#0a0a14] to-transparent pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-[#0a0a14] to-transparent pointer-events-none" />
         </section>
     );
 }

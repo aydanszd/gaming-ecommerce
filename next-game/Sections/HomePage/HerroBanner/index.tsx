@@ -162,7 +162,7 @@ export default function HeroBanner() {
     }, []);
 
     return (
-        <div ref={containerRef} className="relative w-full h-[900px] overflow-hidden bg-[#0a0a14]">
+        <div ref={containerRef} className="relative w-full h-225 overflow-hidden bg-[#0a0a14]">
             {/* Three.js Canvas */}
             <canvas
                 ref={canvasRef}
@@ -180,9 +180,9 @@ export default function HeroBanner() {
                     </div>
 
                     {/* Main Heading */}
-                    <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold font-[family-name:var(--font-orbitron)] leading-none mb-8">
+                    <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold font-(family-name:--font-orbitron) leading-none mb-8">
                         <span className="block text-white">Welcome to the</span>
-                        <span className="block bg-gradient-to-r from-[#0088ff] via-[#00ccff] to-[#ff8888] bg-clip-text text-transparent">Gaming World</span>
+                        <span className="block bg-linear-to-r from-[#0088ff] via-[#00ccff] to-[#ff8888] bg-clip-text text-transparent">Gaming World</span>
                     </h1>
 
                     {/* Description */}
@@ -193,7 +193,7 @@ export default function HeroBanner() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-6 justify-start items-center mb-16">
-                        <button className="group w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-[#0088ff] to-[#0066cc] hover:from-[#0066cc] hover:to-[#0088ff] text-white font-bold rounded-full transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_10px_30px_rgba(0,136,255,0.3)] hover:scale-105 active:scale-95">
+                        <button className="group w-full sm:w-auto px-10 py-5 bg-linear-to-r from-[#0088ff] to-[#0066cc] hover:from-[#0066cc] hover:to-[#0088ff] text-white font-bold rounded-full transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_10px_30px_rgba(0,136,255,0.3)] hover:scale-105 active:scale-95">
                             <Play className="w-6 h-6 fill-current" />
                             Start Shopping Now
                             <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
@@ -226,7 +226,7 @@ export default function HeroBanner() {
             </div>
 
             {/* Decorative Overlay */}
-            <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#0a0a14] to-transparent pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-[#0a0a14] to-transparent pointer-events-none" />
         </div>
     );
 }

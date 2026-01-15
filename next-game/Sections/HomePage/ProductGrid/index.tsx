@@ -94,7 +94,7 @@ export default function GameProductsSection() {
                     >
                         Best seller
                         {activeTab === 'bestseller' && (
-                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#00d9ff] to-[#ff6b9d]" />
+                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-[#00d9ff] to-[#ff6b9d]" />
                         )}
                     </button>
                     <button
@@ -107,7 +107,7 @@ export default function GameProductsSection() {
                     >
                         New arrivals
                         {activeTab === 'newarrivals' && (
-                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#00d9ff] to-[#ff6b9d]" />
+                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-[#00d9ff] to-[#ff6b9d]" />
                         )}
                     </button>
                     <button
@@ -120,7 +120,7 @@ export default function GameProductsSection() {
                     >
                         On Sale
                         {activeTab === 'onsale' && (
-                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#00d9ff] to-[#ff6b9d]" />
+                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-[#00d9ff] to-[#ff6b9d]" />
                         )}
                     </button>
                 </div>
@@ -134,7 +134,7 @@ export default function GameProductsSection() {
                         >
                             {/* Discount Badge */}
                             {product.discount && (
-                                <div className="absolute top-4 left-4 z-10 bg-gradient-to-r from-[#ff6b9d] to-[#ff0080] text-white text-xs font-bold px-3 py-1.5 rounded-full">
+                                <div className="absolute top-4 left-4 z-10 bg-linear-to-r from-[#ff6b9d] to-[#ff0080] text-white text-xs font-bold px-3 py-1.5 rounded-full">
                                     -{product.discount}%
                                 </div>
                             )}
@@ -145,7 +145,7 @@ export default function GameProductsSection() {
                             </button>
 
                             {/* Product Image */}
-                            <div className="relative aspect-[3/4] overflow-hidden bg-[#0a0a14]">
+                            <div className="relative aspect-3/4 overflow-hidden bg-[#0a0a14]">
                                 <img
                                     src={product.image}
                                     alt={product.name}
@@ -162,7 +162,7 @@ export default function GameProductsSection() {
                                 )}
 
                                 {/* Quick Add to Cart - Shows on Hover */}
-                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0a0a14] to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-[#0a0a14] to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <button className="w-full bg-[#00d9ff] hover:bg-[#00b8e6] text-[#0a0a14] font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105">
                                         <ShoppingCart className="w-5 h-5" />
                                         Add to Cart
