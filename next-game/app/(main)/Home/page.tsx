@@ -2,7 +2,8 @@ import HeroBanner from "@/Sections/HomePage/HerroBanner"
 import Collection from "@/Sections/HomePage/Collection"
 import GameProductsSection from "@/Sections/HomePage/ProductGrid"
 import GameBannersFeatures from "@/Sections/HomePage/GameBannersFeatures"
-import GameStoreLocation from "@/Sections/GameStoreLocation"
+import GameStoreLocation from "@/Sections/HomePage/GameStoreLocation"
+import GameBrandsSection from "@/Sections/HomePage/GameBrandsSection"
 export default function HomePage() {
     return (
         <div>
@@ -11,6 +12,7 @@ export default function HomePage() {
             <GameProductsSection/>
             <GameBannersFeatures/>
             <GameStoreLocation/>
+            <GameBrandsSection/>
         </div>
     )
 }
