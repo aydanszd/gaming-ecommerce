@@ -44,42 +44,35 @@ const categories = [
 export default function GameCollection() {
     return (
         <section className="w-full bg-[#0a0a14] py-20 relative overflow-hidden">
-            {/* Background Effects */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-[#0088ff]/10 via-transparent to-transparent" />
 
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-                {/* Header */}
                 <div className="flex justify-between items-center mb-16">
                     <h2 className="text-4xl sm:text-5xl font-bold text-white" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-                        Game <span className="text-[#00d9ff]">Categories</span>
+                        Game <span className="text-yellow-300">Categories</span>
                     </h2>
-                    <button className="group flex items-center gap-2 text-sm font-semibold text-[#00d9ff] hover:text-white transition-colors pb-1">
+                    <button className="group flex items-center gap-2 text-sm font-semibold text-yellow-300 hover:text-white transition-colors pb-1">
                         View all categories
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
                 </div>
-
-                {/* Categories Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                     {categories.map((category) => (
                         <div
                             key={category.id}
                             className="group cursor-pointer"
                         >
-                            {/* Circular Image with Glow Effect */}
                             <div className="relative aspect-square mb-4 overflow-hidden rounded-full bg-[#1a1a2e] border-2 border-[#00d9ff]/20 group-hover:border-[#00d9ff] transition-all duration-300 shadow-[0_0_30px_rgba(0,217,255,0.2)] group-hover:shadow-[0_0_50px_rgba(0,217,255,0.5)]">
                                 <img
                                     src={category.image}
                                     alt={category.name}
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
-                                {/* Overlay Effect */}
                                 <div className="absolute inset-0 bg-linear-to-t from-[#0a0a14] via-transparent to-transparent opacity-50 group-hover:opacity-30 transition-opacity" />
                             </div>
 
-                            {/* Category Info */}
                             <div className="text-center">
-                                <h3 className="text-base font-bold text-white mb-1 group-hover:text-[#00d9ff] transition-colors" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                                <h3 className="text-base font-bold text-white mb-1 group-hover:text-yellow-300 transition-colors" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                                     {category.name}
                                 </h3>
                                 <p className="text-sm text-gray-400">
@@ -91,7 +84,6 @@ export default function GameCollection() {
                 </div>
             </div>
 
-            {/* Bottom Gradient */}
             <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-[#0a0a14] to-transparent pointer-events-none" />
         </section>
     );

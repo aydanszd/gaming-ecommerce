@@ -1,7 +1,5 @@
 'use client';
-
 import { Package, CreditCard, RotateCcw, Headphones, ArrowRight } from 'lucide-react';
-
 const banners = [
     {
         id: 1,
@@ -31,98 +29,83 @@ const features = [
         icon: Package,
         title: "Free Shipping",
         description: "Free shipping over order $120",
-        color: "#00d9ff"
+        color: "#facc15"
     },
     {
         icon: CreditCard,
         title: "Flexible Payment",
         description: "Pay with Multiple Credit Cards",
-        color: "#00d9ff"
+        color: "#facc15"
     },
     {
         icon: RotateCcw,
         title: "14 Day Returns",
         description: "Within 30 days for an exchange",
-        color: "#00d9ff"
+        color: "#facc15"
     },
     {
         icon: Headphones,
         title: "Premium Support",
         description: "Outstanding premium support",
-        color: "#00d9ff"
+        color: "#facc15"
     }
 ];
 
 export default function GameBannersFeatures() {
     return (
         <section className="w-full bg-[#0a0a14] py-20 relative overflow-hidden">
-            {/* Background Effects */}
-            <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#00d9ff]/5 rounded-full blur-3xl" />
+            <div className="absolute top-1/4 left-0 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl" />
             <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-[#ff6b9d]/5 rounded-full blur-3xl" />
-
             <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-                {/* Large Banners Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
                     {banners.map((banner, index) => (
                         <div
                             key={banner.id}
-                            className="group relative rounded-2xl overflow-hidden h-125 cursor-pointer border border-[#ffffff]/10 hover:border-[#00d9ff]/50 transition-all duration-500"
+                            className="group relative rounded-2xl overflow-hidden h-125 cursor-pointer border border-[#ffffff]/10 hover:border-yellow-400/50 transition-all duration-500"
                         >
-                            {/* Background Image */}
                             <div className={`absolute inset-0 bg-linear-to-br ${banner.bgColor}`}>
                                 <img
                                     src={banner.image}
                                     alt={banner.title}
                                     className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
                                 />
-                                {/* Dark Overlay */}
                                 <div className="absolute inset-0 bg-linear-to-t from-[#0a0a14] via-[#0a0a14]/50 to-transparent" />
                             </div>
 
-                            {/* Content */}
                             <div className="absolute  inset-0 p-8 flex flex-col justify-end">
-                                {/* Badge */}
-                                <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-[#00d9ff]/20 border border-[#00d9ff]/30 rounded-full backdrop-blur-md self-start">
-                                    <span className="text-xs font-bold text-[#00d9ff] tracking-wider">{banner.badge}</span>
+                                <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-yellow-400/20 border border-yellow-400/30 rounded-full backdrop-blur-md self-start">
+                                    <span className="text-xs font-bold text-yellow-400 tracking-wider">{banner.badge}</span>
                                 </div>
 
-                                {/* Title */}
-                                <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-[#00d9ff] transition-colors" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                                <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                                     {banner.title}
                                 </h3>
 
-                                {/* Shop Now Button */}
-                                <button className="group/btn inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-[#00d9ff] border border-white/20 hover:border-[#00d9ff] text-white font-semibold rounded-full backdrop-blur-sm transition-all duration-300 self-start">
+                                <button className="group/btn inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-yellow-400 border border-white/20 hover:border-yellow-400 text-white hover:text-[#0a0a14] font-semibold rounded-full backdrop-blur-sm transition-all duration-300 self-start">
                                     Shop now
                                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                                 </button>
                             </div>
 
-                            {/* Glow Effect on Hover */}
                             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                                <div className="absolute inset-0 shadow-[inset_0_0_60px_rgba(0,217,255,0.3)]" />
+                                <div className="absolute inset-0 shadow-[inset_0_0_60px_rgba(250,204,21,0.3)]" />
                             </div>
                         </div>
                     ))}
                 </div>
-
-                {/* Features Section */}
                 <div className="grid max-w-7xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {features.map((feature, index) => {
                         const Icon = feature.icon;
                         return (
                             <div
                                 key={index}
-                                className="group flex items-start gap-4 p-6 bg-[#1a1a2e]/50 border border-[#ffffff]/10 hover:border-[#00d9ff]/50 rounded-xl backdrop-blur-sm transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,217,255,0.2)]"
+                                className="group flex items-start gap-4 p-6 bg-[#1a1a2e]/50 border border-[#ffffff]/10 hover:border-yellow-400/50 rounded-xl backdrop-blur-sm transition-all duration-300 hover:shadow-[0_0_30px_rgba(250,204,21,0.2)]"
                             >
-                                {/* Icon */}
-                                <div className="shrink-0 w-14 h-14 bg-[#00d9ff]/10 rounded-full flex items-center justify-center border border-[#00d9ff]/30 group-hover:bg-[#00d9ff]/20 group-hover:border-[#00d9ff] transition-all duration-300">
-                                    <Icon className="w-7 h-7 text-[#00d9ff]" />
+                                <div className="shrink-0 w-14 h-14 bg-yellow-400/10 rounded-full flex items-center justify-center border border-yellow-400/30 group-hover:bg-yellow-400/20 group-hover:border-yellow-400 transition-all duration-300">
+                                    <Icon className="w-7 h-7 text-yellow-400" />
                                 </div>
-
-                                {/* Text Content */}
                                 <div className="flex-1">
-                                    <h4 className="text-white font-bold text-lg mb-1 group-hover:text-[#00d9ff] transition-colors" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                                    <h4 className="text-white font-bold text-lg mb-1 group-hover:text-yellow-400 transition-colors" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                                         {feature.title}
                                     </h4>
                                     <p className="text-gray-400 text-sm leading-relaxed">

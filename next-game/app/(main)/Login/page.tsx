@@ -1,9 +1,6 @@
-export default function LoginPage(){
-return (
-    <div>
-        <h1>
-            HomePage Hello Word
-        </h1>
-    </div>
-)
+import CyberpunkLogin from "./view"
+export default function LoginPage() {
+    return (
+        <CyberpunkLogin />
+    )
 }

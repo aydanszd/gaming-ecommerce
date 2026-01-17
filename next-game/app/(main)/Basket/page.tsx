@@ -1,9 +1,6 @@
-export default function CartPage(){
-return (
-    <div>
-        <h1>
-            HomePage Hello Word
-        </h1>
-    </div>
-)
+import CartPage from "./view"
+export default function CartPages() {
+    return (
+        <CartPage />
+    )
 }
